@@ -112,7 +112,7 @@ elif ext in video_exts:
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(output_name, fourcc, fps, (width, height))
     
-    print("Tracker Activated. Let the i3 cook...")
+    print("Tracker Activated. Let me cook...")
     
     frame_count = 0
     while cap.isOpened():
@@ -133,4 +133,5 @@ elif ext in video_exts:
     print(f"Operational video saved as: {output_name}")
 
 else:
+
     print("Unsupported file type! Throw a standard image or video at it.")
